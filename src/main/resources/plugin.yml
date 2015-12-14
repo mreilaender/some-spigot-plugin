@@ -1,10 +1,9 @@
 name: ${project.artifactId}
 version: ${project.version}
 author: mreilaender
-main: org.example.www.ExampleMain
-prefix: example
+main: org.doesntexist.limitx.Generic
 
 commands:
-  example:
-    description: Example command
-    usage: /example
+  generic:
+    description: generic command
+    usage: /generic
