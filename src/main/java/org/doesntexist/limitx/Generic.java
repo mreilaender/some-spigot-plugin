@@ -5,6 +5,7 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.doesntexist.limitx.command.handler.ExampleCommand;
 import org.doesntexist.limitx.command.CommandManager;
+import org.doesntexist.limitx.utils.GenericFactory;
 
 /**
  * @author mreilaender
@@ -20,10 +21,11 @@ public class Generic extends JavaPlugin {
     public void onEnable() {
         getServer().getConsoleSender().sendMessage("Hello World");
 
+        GenericFactory.initialize(this);
         this.pluginDescriptionFile = this.getDescription();
         this.name = this.pluginDescriptionFile.getName();
         this.prefix = this.pluginDescriptionFile.getPrefix();
-        this.commandManager = new CommandManager(this);
+        this.commandManager = new CommandManager();
         this.registerCommandExecuter();
 
         this.commandManager.addCommandHandler("test", new ExampleCommand());
@@ -39,10 +41,6 @@ public class Generic extends JavaPlugin {
 
     }
 
-    public String getPluginName() {
-        return this.name;
-    }
-
     public String getPluginDescription() {
         if(!(this.pluginDescriptionFile.getDescription() == null))
             return this.pluginDescriptionFile.getDescription();
@@ -50,16 +48,16 @@ public class Generic extends JavaPlugin {
             return Messages.noPluginDescription;
     }
 
-    public String getPrefix() {
-        return prefix;
-    }
+    public String getPrefix() { return prefix; }
 
     /**
      * Formats with colors and returns the plugins prefix, so it can be used for printing to console.
      * Example: [prefix]
      * @return String
      */
-    public String getChatPrefix() {
-        return ChatColor.BLUE + "[" + prefix + "] " + ChatColor.RESET;
+    public String getChatPrefix() { return ChatColor.BLUE + "[" + prefix + "] " + ChatColor.RESET; }
+
+    public String getPluginName() {
+        return this.name;
     }
 }
