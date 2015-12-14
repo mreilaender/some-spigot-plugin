@@ -4,7 +4,9 @@ import org.bukkit.ChatColor;
 import org.doesntexist.limitx.Generic;
 
 /**
+ * This class provides all Methods needed by other classes, without delivering the instance of the Main class.
  * @author mreilaender
+ *
  */
 public class GenericFactory {
     private static Generic generic;
