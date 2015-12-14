@@ -16,12 +16,16 @@ public class GenericFactory {
             generic = g;
     }
 
+    /**
+     * Returns the plugin's prefix
+     * @return
+     */
     public static String getPrefix() {
         return generic.getPrefix();
     }
 
     /**
-     * Formats with colors and returns the plugins prefix, so it can be used for printing to console.
+     * Formats with colors and returns the plugin's prefix, so it can be used for printing (e.g. to the console).
      * Example: [prefix]
      * @return String
      */
