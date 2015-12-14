@@ -18,7 +18,7 @@ public class GenericFactory {
 
     /**
      * Returns the plugin's prefix
-     * @return
+     * @return String
      */
     public static String getPrefix() {
         return generic.getPrefix();
