@@ -2,6 +2,7 @@ name: ${project.artifactId}
 version: ${project.version}
 author: mreilaender
 main: org.doesntexist.limitx.Generic
+prefix: generic
 
 commands:
   generic:
