@@ -1,4 +1,4 @@
-package org.example.www.command;
+package org.doesntexist.limitx.command;
 
 import org.bukkit.entity.Player;
 

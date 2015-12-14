@@ -1,10 +1,10 @@
-package org.example.www.command;
+package org.doesntexist.limitx.command;
 
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.example.www.ErrorMessages;
-import org.example.www.ExampleMain;
+import org.doesntexist.limitx.ExampleMain;
+import org.doesntexist.limitx.Messages;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -37,9 +37,9 @@ public class CommandManager implements CommandExecutor {
                         String[] subCmdArgs = Arrays.copyOfRange(args, 1, args.length);
                         boolean succeed = subCmdAbs.onCommand(subCmd, subCmdArgs, player);
                         if(!succeed)
-                            player.sendMessage(this.main.getChatPrefix() + ErrorMessages.errPerfCommand);
+                            player.sendMessage(this.main.getChatPrefix() + Messages.errPerfCommand);
                     } else
-                        player.sendMessage(this.main.getChatPrefix() + ErrorMessages.noSuchCommand + subCmd);
+                        player.sendMessage(this.main.getChatPrefix() + Messages.noSuchCommand + subCmd);
                 }
             }
             return true;

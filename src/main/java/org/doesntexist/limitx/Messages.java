@@ -1,4 +1,4 @@
-package org.example.www;
+package org.doesntexist.limitx;
 
 /**
  * @author mreilaender

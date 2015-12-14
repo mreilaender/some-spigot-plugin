@@ -1,15 +1,15 @@
-package org.example.www;
+package org.doesntexist.limitx;
 
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.example.www.command.CommandManager;
-import org.example.www.command.handler.ExampleCommand;
+import org.doesntexist.limitx.command.handler.ExampleCommand;
+import org.doesntexist.limitx.command.CommandManager;
 
 /**
  * @author mreilaender
  */
-public class ExampleMain extends JavaPlugin {
+public class Generic extends JavaPlugin {
     private String name;
     private String prefix;
     private PluginDescriptionFile pluginDescriptionFile;
@@ -47,7 +47,7 @@ public class ExampleMain extends JavaPlugin {
         if(!(this.pluginDescriptionFile.getDescription() == null))
             return this.pluginDescriptionFile.getDescription();
         else
-            return ErrorMessages.noPluginDescription;
+            return Messages.noPluginDescription;
     }
 
     public String getPrefix() {

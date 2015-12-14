@@ -1,7 +1,7 @@
-package org.example.www.command.handler;
+package org.doesntexist.limitx.command.handler;
 
 import org.bukkit.entity.Player;
-import org.example.www.command.Command;
+import org.doesntexist.limitx.command.Command;
 
 /**
  * @author mreilaender

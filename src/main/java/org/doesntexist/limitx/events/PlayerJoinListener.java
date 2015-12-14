@@ -1,11 +1,11 @@
-package org.example.www.events;
+package org.doesntexist.limitx.events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.example.www.Messages;
+import org.doesntexist.limitx.Messages;
 
 /**
  * @author mreilaender
