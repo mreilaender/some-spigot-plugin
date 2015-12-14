@@ -3,6 +3,7 @@ version: ${project.version}
 author: mreilaender
 main: org.doesntexist.limitx.Generic
 prefix: generic
+description: Some usefull commands
 
 commands:
   generic:
