@@ -1,5 +1,6 @@
 package org.doesntexist.limitx.command;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -38,7 +39,7 @@ public class CommandManager implements CommandExecutor {
                         if(!succeed)
                             player.sendMessage(GenericFactory.getChatPrefix() + Messages.errPerfCommand);
                     } else
-                        player.sendMessage(GenericFactory.getChatPrefix() + Messages.noSuchCommand + subCmd);
+                        player.sendMessage(GenericFactory.getChatPrefix() + String.format(Messages.noSuchCommand, ChatColor.RED + subCmd));
                 }
             }
             return true;
