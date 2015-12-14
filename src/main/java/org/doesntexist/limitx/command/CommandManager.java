@@ -3,7 +3,7 @@ package org.doesntexist.limitx.command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.doesntexist.limitx.ExampleMain;
+import org.doesntexist.limitx.Generic;
 import org.doesntexist.limitx.Messages;
 
 import java.util.Arrays;
@@ -16,9 +16,9 @@ import java.util.Map;
  */
 public class CommandManager implements CommandExecutor {
     private Map<String, Command> commandHandlers;
-    private ExampleMain main;
+    private Generic main;
 
-    public CommandManager(ExampleMain main) {
+    public CommandManager(Generic main) {
         this.commandHandlers = new HashMap<String, Command>();
         this.main = main;
     }
